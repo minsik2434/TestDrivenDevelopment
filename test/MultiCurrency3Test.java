@@ -51,7 +51,6 @@ public class MultiCurrency3Test {
 
 
         - $5 + 10 CHF = $10
-        - amount를 private로 벼녁ㅇ
         - Money의 반올림
         - equals()
         - Equal null
