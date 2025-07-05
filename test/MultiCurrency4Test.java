@@ -28,6 +28,11 @@ public class MultiCurrency4Test {
 
     /*
         Franc 의 곱셈을 구현
+        Frnac 은 Dollar와 중복된다
+
+        - Dollar/Franc 중복
+        - 공용 equals
+        - 공용 times
      */
     @DisplayName("4. Franc 곱셈을 구현")
     @Test
