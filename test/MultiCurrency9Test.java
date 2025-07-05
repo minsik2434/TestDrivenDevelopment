@@ -1,12 +1,10 @@
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import test8.Franc;
-import test8.Money;
-
+import test9.Money;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class MultiCurrency8Test {
+public class MultiCurrency9Test {
 
     /*
         - $5 + 10 CHF = $10
@@ -19,7 +17,8 @@ public class MultiCurrency8Test {
         - 통화
         - testFrancMultiplication 제거
 
-        불필요한 하위 클래스인 Franc와 Dollar를 삭제하기 위해 통화(currency) 개념을 도입한다
+        불필요한 클래스인 Dollar, Franc 를 제거하기 위해 공통구현인 times()를 상위 객체인 Money로 옮겨
+        Dollar, Franc 를 제거한다
 
      */
 
@@ -34,7 +33,7 @@ public class MultiCurrency8Test {
     @DisplayName("7. 팩토리 메서드를 사용해 객체를 생성하도록 수정")
     @Test
     void testFrancMultiplication(){
-        Franc five = Money.franc(5);
+        Money five = Money.franc(5);
         assertEquals(Money.franc(10), five.times(2));
         assertEquals(Money.franc(15), five.times(3));
     }

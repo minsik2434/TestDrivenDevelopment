@@ -34,8 +34,9 @@ public class Dollar extends Money {
 //        return "USD";
 //    }
 
-    @Override
-    public String currency() {
-        return currency;
-    }
+    //이제 상위 객체인 Money 에서 currency를 구현하므로 필요 없음
+//    @Override
+//    public String currency() {
+//        return currency;
+//    }
 }
