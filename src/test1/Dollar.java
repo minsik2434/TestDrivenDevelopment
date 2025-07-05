@@ -1,5 +1,8 @@
 package test1;
 
+/*
+    1. $5 * 2 = $10 테스트를 수행하기 위해 테스트 스텁을 구현
+ */
 public class Dollar {
     public int amount;
 
@@ -7,12 +10,8 @@ public class Dollar {
         this.amount = amount;
     }
 
-    public Dollar times(int multiplier){
-        return new Dollar(this.amount * multiplier);
+    public void times(int multiplier){
+        this.amount = amount * multiplier;
     }
 
-    public boolean equals(Object object){
-        Dollar dollar = (Dollar) object;
-        return amount == dollar.amount;
-    }
 }
